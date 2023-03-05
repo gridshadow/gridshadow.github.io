@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="110" viewBox="0 0 350 110" version="1.1">
+  <defs>
+    <filter id="glow" filterUnits="userSpaceOnUse"
+            x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur10"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur20"/>
+      <feMerge result="blur-merged">
+        <feMergeNode in="blur10"/>
+        <feMergeNode in="blur20"/>
+      </feMerge>
+      <feMerge>
+        <feMergeNode in="blur-merged"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)" transform="translate(33,25)">
+    <circle cx="110" cy="32" r="8" stroke-width="5" stroke="#0ff" fill="none" />
+    <circle cx="188" cy="32" r="8" stroke-width="5" stroke="#0ff" fill="none" />
+    <circle cx="214" cy="32" r="8" stroke-width="5" stroke="#0ff" fill="none" />
+    <circle cx="240" cy="32" r="8" stroke-width="5" stroke="#0ff" fill="none" />
+    <path d="M25,25h15a15,15 0 1 1 -2.01,-7.5M50,42.5v-10.5a8,8 0 1 1 16,0M80,38.928a8,8 0 0 0 8,0M84,40v-16m-4,1.072a8,8 0 0 1 8,0M118,32v-24.5
+        M142.928,28A8,8 0 0 0 128,32h16a8,8 0 0 1 -14.928,4M154,7.5v35v-10.5a8,8 0 0 1 16,0v10.5M196,32v10.5M222,32v-24.5M272.928,28a8,8 0 1 1 -13.856,0M266,30v10" stroke-width="5" stroke="#0ff" fill="none"/>
+  </g>
+  <g transform="translate(33,25)">
+    <circle cx="110" cy="32" r="8" stroke-width="4" stroke="#fff" fill="none" />
+    <circle cx="188" cy="32" r="8" stroke-width="4" stroke="#fff" fill="none" />
+    <circle cx="214" cy="32" r="8" stroke-width="4" stroke="#fff" fill="none" />
+    <circle cx="240" cy="32" r="8" stroke-width="4" stroke="#fff" fill="none" />
+    <path d="M25,25h15a15,15 0 1 1 -2.01,-7.5M50,42.5v-10.5a8,8 0 1 1 16,0M80,38.928a8,8 0 0 0 8,0M84,40v-16m-4,1.072a8,8 0 0 1 8,0M118,32v-24.5
+        M142.928,28A8,8 0 0 0 128,32h16a8,8 0 0 1 -14.928,4M154,7.5v35v-10.5a8,8 0 0 1 16,0v10.5M196,32v10.5M222,32v-24.5M272.928,28a8,8 0 1 1 -13.856,0M266,30v10" stroke-width="4" stroke="#fff" fill="none"/>
+  </g>
+</svg>
