@@ -1,17 +1,37 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Gridshadow - Software Project</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Gridshadow - Software Projects</title>
     </head>
     <body>
         <header>
             <img src="logo.svg" class="main-logo"/>
             <h1>Gridshadow - Software Projects</h1>
         </header>
-        <section class="page">
-            <p>A placeholder page for my software projects</p>
-        <div>
+        <nav>
+            <div class="bullet"></div>
+            <a href="#harfbuzz-ft">FreeType/HarfBuzz CMake</a>
+            <div class="bullet"></div>
+        </nav>
+        <main>
+            <section id="harfbuzz-ft">
+                <h2>FreeType/HarfBuzz CMake (harfbuzz-ft)</h2>
+                <h3>CMake project for simplifying FreeType and HarfBuzz dependency build</h3>
+                <p>
+                    This project is designed as a simplified way to add both FreeType and HarfBuzz as
+                    dependent libraries of a CMake project, with automatic building, without the usual
+                    FreeType &gt; HarfBuzz &gt; FreeType cyclic dependency issue.
+                </p>
+                <dl>
+                    <dt>GitHub Repository:</dt>
+                    <dd><a href="https://github.com/gridshadow/harfbuzz-ft">https://github.com/gridshadow/harfbuzz-ft</a></a></dd>
+                    <dt>Current Release:</dt>
+                    <dd><a href="https://github.com/gridshadow/harfbuzz-ft/releases/tag/v1.0.0">v1.0.0 (FreeType 2.13.0; HarfBuzz 7.1.0)</a></dd>
+                </dl>
+            </section>
+        </main>
     </body>
 </html>

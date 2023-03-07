@@ -1,6 +1,6 @@
 body {
     font-family: "Trebuchet MS", "Trebuchet", "Arial",sans-serif;
-	font-size: 10pt;
+	font-size: 12pt;
 	text-align: justify;
 	margin: 0em;
 	padding: 0em;
@@ -8,10 +8,54 @@ body {
     color: white;
 }
 
-header, section.page {
+header, main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 1em 0em;
+}
+
+section {
+    border: solid 0.1em white;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0em 0em 1em 0em #0ff, inset 0em 0em 1em 0em #0ff8;
+    border-radius:0.5em;
+}
+
+nav {
+    background: #088;
+    padding: 1em;
+    position: sticky;
+    top: 0px;
+}
+
+div.bullet {
+    box-sizing: content-box;
+    height: 0.25em;
+    width: 0.25em;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a, nav a:visited {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0em 0em 1em white;
 }
 
 .main-logo {
@@ -23,4 +67,39 @@ header, section.page {
 
 h1 {
     text-align: center;
+    text-shadow: 0em 0em 1em #0ff;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    text-shadow: 0em 0em 1em #0ff;
+    margin-top: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3:after {
+    font-size: 1.4em;
+    font-weight: bold;
+    clear: both;
+}
+
+dt {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+dd {
+    margin-bottom: 1em;
+}
+
+a, a.visited {
+    color: #0ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0em 0em 1em #0ff;
 }
